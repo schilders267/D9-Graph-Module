@@ -1,0 +1,18 @@
+dynamic_graph_js:
+  version: 1.0
+  js:
+    js/d3_lib/d3.v4.min.js: {}
+    js/dynamic_graph_js/line_graph.js: {}
+    js/dynamic_graph_js/bar_graph.js: {}
+  dependencies:
+    - core/jquery
+
+dynamic_graph_form_js:
+  version: 1.0
+  js:
+    js/dynamic_graph_js/grey_out.js: {}
+
+dynamic_graph_css:
+  css:
+    theme:
+      css/dynamic-graph.css: { }

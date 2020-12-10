@@ -1,0 +1,9 @@
+graph_module.graph_module_admin_settings_form:
+  path: '/admin/config/graph_module'
+  defaults:
+    _form: '\Drupal\graph_module\Form\GraphModuleAdminSettingsForm'
+    _title: 'GraphModuleAdminSettingsForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

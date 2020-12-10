@@ -1,0 +1,19 @@
+uuid: 819370ed-cd71-49d0-9986-81df6ac4d81b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_maximum_chart_size
+    - node.type.dynamic_graph
+id: node.dynamic_graph.field_maximum_chart_size
+field_name: field_maximum_chart_size
+entity_type: node
+bundle: dynamic_graph
+label: 'Maximum Chart Size'
+description: 'The is the maximum value for the y axis value of the graph. This will only appear in line graphs.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

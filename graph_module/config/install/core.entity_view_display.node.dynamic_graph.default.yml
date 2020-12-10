@@ -1,0 +1,65 @@
+uuid: f8e63c64-69bf-496a-9b9a-0a1a16e64696
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dynamic_graph.body
+    - field.field.node.dynamic_graph.field_chart_type
+    - field.field.node.dynamic_graph.field_left_text
+    - field.field.node.dynamic_graph.field_maximum_chart_size
+    - field.field.node.dynamic_graph.field_measure_graph_json
+    - field.field.node.dynamic_graph.field_top_text
+    - node.type.dynamic_graph
+  module:
+    - file
+    - options
+    - user
+_core:
+  default_config_hash: sEVPWwOMUgRz-FzrZI901fEmWSai526Ij3gvnSB3tT0
+id: node.dynamic_graph.default
+targetEntityType: node
+bundle: dynamic_graph
+mode: default
+content:
+  field_chart_type:
+    type: list_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_left_text:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_maximum_chart_size:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_measure_graph_json:
+    type: file_default
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_top_text:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  links: true

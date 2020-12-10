@@ -1,0 +1,27 @@
+uuid: a0bad26f-fb20-4c4d-91c9-a070b565936c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_measure_graph_json
+    - node.type.dynamic_graph
+  module:
+    - file
+id: node.dynamic_graph.field_measure_graph_json
+field_name: field_measure_graph_json
+entity_type: node
+bundle: dynamic_graph
+label: 'Measure Graph JSON'
+description: 'The file that contains the values of your graph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: json
+  max_filesize: 2MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

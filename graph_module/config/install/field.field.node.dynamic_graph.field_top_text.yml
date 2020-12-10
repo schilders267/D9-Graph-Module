@@ -1,0 +1,19 @@
+uuid: b00d824e-f96c-423a-b122-d124e6c886c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_top_text
+    - node.type.dynamic_graph
+id: node.dynamic_graph.field_top_text
+field_name: field_top_text
+entity_type: node
+bundle: dynamic_graph
+label: 'Top Text'
+description: 'Text that will appear as the title above the graph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

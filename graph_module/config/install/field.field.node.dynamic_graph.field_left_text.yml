@@ -1,0 +1,19 @@
+uuid: 50710e01-8084-45c9-8e30-b56187318d49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_left_text
+    - node.type.dynamic_graph
+id: node.dynamic_graph.field_left_text
+field_name: field_left_text
+entity_type: node
+bundle: dynamic_graph
+label: 'Left Text'
+description: 'This is the text that will appear along the y axis of the graph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
