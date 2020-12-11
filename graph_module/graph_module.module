@@ -42,12 +42,13 @@ function graph_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
 }
 function graph_module_preprocess_node(&$variables) {
   //Feed the config settings to the drupal behavior so we can use them in our Javascript
-
+  $bar_graph_color = \Drupal::config('graph_module.settings')->get('bar_graph_color');
   $line_graph_color = \Drupal::config('graph_module.settings')->get('line_graph_color');
   $variables['#attached'] = [
     'drupalSettings' => [
       'dynamic_graph_js' => [
         'line_graph_color' => $line_graph_color,
+        'bar_graph_color' => $bar_graph_color,
       ],
     ],
   ];

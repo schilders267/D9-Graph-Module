@@ -1,6 +1,7 @@
 (function ($) {
+  console.log('line_graph');
 
-  Drupal.behaviors.graph_module = {
+  Drupal.behaviors.graph_module2 = {
     attach: function (context, settings) {
       var line_graph_color = settings.dynamic_graph_js.line_graph_color;
       console.log(line_graph_color);
@@ -13,11 +14,9 @@
 
       // append the svg object to the body of the page
       $(context).find("div.Line").once("some-arbitrary-key").each(function () {
-        //console.log(line_graph_color + 'color method 1');
+        console.log(line_graph_color + 'color method 1');
         console.log(window.line_graph_color + 'from each statement');
-        //console.log($(this));
         var title = $(this).attr("label");
-        //console.log(title);
         var svg = d3.select("[label='" + title + "']")
 
           .append("svg")
@@ -42,16 +41,6 @@
 
           });
           var max_index = 0
-          /*
-              fetch(data_file)
-                .then(function(resp) {
-                  return resp.json();
-                })
-                .then(function(data){
-                   max_index = data.length;
-                   console.log(max_index);
-                });*/
-
           var request = new XMLHttpRequest();
           request.open("GET", data_file, false);
           request.send(null)
@@ -118,7 +107,7 @@
 
           svg.append("path")
             .datum(data)
-            .attr("fill", "#76bab2")
+            .attr("fill", line_graph_color)
             .attr("fill-opacity", 1)
             .attr("stroke", "none")
             .attr("d", d3.area()
@@ -227,7 +216,7 @@
 
 
       });
-  // append axis to this g
+    // append axis to this g
     // your y-axis will be in the margin, so adjust margins.left to fit
 
     });
